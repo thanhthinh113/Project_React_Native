@@ -52,6 +52,56 @@
             console.log("Chỉ số BMI của John_2 " + mark_bmi_2 + "cao hơn Mark_2 " + john_bmi_2)
 
         /**/
+
+        /*Coding Challenge #3*/
+
+        function calculateAverage(x1, x2, x3) {
+            return (x1 + x2 + x3) / 3
+        }
+
+        let dolphinsAvg = calculateAverage(96, 108, 89).toFixed(1)
+        let koalasAvg = calculateAverage(88, 91, 110).toFixed(1)
+
+        console.log("Điểm trung bình của đội Dolphins: " + dolphinsAvg)
+        console.log("Điểm trung bình của đội Koalas: " + koalasAvg)
+
+        if (dolphinsAvg > koalasAvg)
+            console.log("Điểm trung bình của đội Dolphins lớn hơn đội Koalas!")
+        else if (dolphinsAvg < koalasAvg)
+            console.log("Điểm trung bình của đội Koalas lớn hơn đội Dolphins!")
+        else
+            console.log("Hai đội hòa nhau!")
+
+
+        let bonus1_dolphinsAvg = calculateAverage(97, 112, 101).toFixed(3)
+        let bonus1_koalasAvg = calculateAverage(109, 95, 123).toFixed(3)
+
+        console.log("Điểm trung bình của đội Bonus1_Dolphins: " + bonus1_dolphinsAvg)
+        console.log("Điểm trung bình của đội Bonus1_Koalas: " + bonus1_dolphinsAvg)
+
+        if ((bonus1_dolphinsAvg > bonus1_koalasAvg) && bonus1_dolphinsAvg >= 100)
+            console.log("Điểm trung bình của đội Bonus1_Dolphins chiến thắng!")
+        else if ((bonus1_dolphinsAvg < bonus1_koalasAvg) && bonus1_koalasAvg >= 100)
+            console.log("Điểm trung bình của đội Bonus1_Koalas chiến thắng!")
+        else if ((bonus1_dolphinsAvg == bonus1_koalasAvg) && bonus1_dolphinsAvg >= 100 && bonus1_koalasAvg >= 100)
+            console.log("Hai đội hòa nhau!")
+        else
+            console.log("Không có đội nào thỏa yêu cầu!")
+
+        let bonus2_dolphinsAvg = calculateAverage(97, 112, 101).toFixed(3)
+        let bonus2_koalasAvg = calculateAverage(109, 95, 106).toFixed(3)
+
+        console.log("Điểm trung bình của đội Bonus2_Dolphins: " + bonus2_dolphinsAvg)
+        console.log("Điểm trung bình của đội Bonus2_Koalas: " + bonus2_dolphinsAvg)
+
+        if ((bonus2_dolphinsAvg > bonus2_koalasAvg) && bonus2_dolphinsAvg >= 100)
+            console.log("Điểm trung bình của đội Bonus2_Dolphins chiến thắng!")
+        else if ((bonus2_dolphinsAvg < bonus2_koalasAvg) && bonus2_koalasAvg >= 100)
+            console.log("Điểm trung bình của đội Bonus2_Koalas chiến thắng!")
+        else if ((bonus2_dolphinsAvg == bonus2_koalasAvg) && bonus2_dolphinsAvg >= 100 && bonus2_koalasAvg >= 100)
+            console.log("Hai đội hòa nhau!")
+        else
+            console.log("Không có đội nào thỏa yêu cầu!")
     </script>
 </head>
 
