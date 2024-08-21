@@ -9,22 +9,22 @@
         /*Coding Challenge #1*/
 
         // Data 1
-        mark_weight_1 = 78
-        mark_height_1 = 1.69
-        john_weight_1 = 92
-        john_height_1 = 1.95
+        let mark_weight_1 = 78
+        let mark_height_1 = 1.69
+        let john_weight_1 = 92
+        let john_height_1 = 1.95
 
         // Data 2
-        mark_weight_2 = 95
-        mark_height_2 = 1.88
-        john_weight_2 = 85
-        john_height_2 = 1.76
+        let mark_weight_2 = 95
+        let mark_height_2 = 1.88
+        let john_weight_2 = 85
+        let john_height_2 = 1.76
 
-        mark_bmi_1 = mark_weight_1 / (mark_height_1 ** 2)
-        john_bmi_1 = john_weight_1 / (john_height_1 ** 2)
+        let mark_bmi_1 = (mark_weight_1 / (mark_height_1 ** 2)).toFixed(1)
+        let john_bmi_1 = (john_weight_1 / (john_height_1 ** 2)).toFixed(1)
 
-        mark_bmi_2 = mark_weight_2 / (mark_height_2 ** 2)
-        john_bmi_2 = john_weight_2 / (john_height_2 ** 2)
+        let mark_bmi_2 = (mark_weight_2 / (mark_height_2 ** 2)).toFixed(1)
+        let john_bmi_2 = (john_weight_2 / (john_height_2 ** 2)).toFixed(1)
 
         markHigherBMI_1 = mark_bmi_1 > john_bmi_1
         markHigherBMI_2 = mark_bmi_2 > john_bmi_2
@@ -36,6 +36,22 @@
         console.log("\nData 2 - Mark BMI:", mark_bmi_2)
         console.log("Data 2 - John BMI:", john_bmi_2)
         console.log("Data 2 - Mark có chỉ số BMI cao hơn John không?", markHigherBMI_2)
+
+        /**/
+
+        /*Coding Challenge #2*/
+
+        if (mark_bmi_1 > john_bmi_1)
+            console.log("Chỉ số BMI của Mark_1 " + mark_bmi_1 + "cao hơn John_1 " + john_bmi_1)
+        else
+            console.log("Chỉ số BMI của John_1 " + mark_bmi_1 + "cao hơn Mark_1 " + john_bmi_1)
+
+        if (mark_bmi_2 > john_bmi_2)
+            console.log("Chỉ số BMI của Mark_2 " + mark_bmi_2 + "cao hơn John_2 " + john_bmi_2)
+        else
+            console.log("Chỉ số BMI của John_2 " + mark_bmi_2 + "cao hơn Mark_2 " + john_bmi_2)
+
+        /**/
     </script>
 </head>
 
