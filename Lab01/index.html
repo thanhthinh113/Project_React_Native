@@ -118,7 +118,34 @@
         console.log("Hoá đơn là: "+bill3+"Số tiền tip của bill3: "+tip+" Tổng số tiền phải trả: "+(bill3+tip))
 
         /**/
+
+
+        /*JavaScript Fundamentals – Part 2*/
+
+        /*Coding Challenge #1*/
+
+        function calcAverage(x1, x2, x3) {
+            return (x1 + x2 + x3) / 3
+        }
+        let dolphinsAvg1 = calcAverage(44, 23, 71).toFixed(1)
+        let koalasAvg1 = calcAverage(63, 54, 49).toFixed(1)
+
+        let dolphinsAvg2 = calcAverage(85, 54, 41).toFixed(1)
+        let koalasAvg2 = calcAverage(23, 34, 27).toFixed(1)
+
+        function checkWinner(avgDolphins, avgKoalas) {
+            if (avgDolphins >= 2 * avgKoalas)
+                return "Dolphins win 🏆"+"("+avgDolphins+" vs. "+avgKoalas+")"
+            else if (avgKoalas >= 2 * avgDolphins)
+                return "Koalas win 🏆"+"("+avgKoalas+" vs. "+avgDolphins+")"
+            else
+                return "No team wins..."
+        }
+        console.log(checkWinner(dolphinsAvg1, koalasAvg1));
+        console.log(checkWinner(dolphinsAvg2, koalasAvg2));
         
+
+
     </script>
 </head>
 
