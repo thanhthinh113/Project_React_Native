@@ -34,6 +34,18 @@
     const result = words.filter(filterFun);
 
     console.log(result);
+
+
+    // Reduce chứa một callbacks và initialValue
+    const array1 = [1, 2, 3, 4];
+
+    const initialValue = 0;
+    const sumWithInitial = array1.reduce(
+        (accumulator, currentValue) => accumulator + currentValue, // hàm callbacks
+        initialValue,
+    );
+
+    console.log(sumWithInitial)
 </script>
 
 <body>
