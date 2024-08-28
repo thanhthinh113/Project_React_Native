@@ -24,6 +24,16 @@
     // mặc định là elecment, index, array
     const ev1 = (element) => element % 2 === 0
     console.log(arr1.some(ev1));
+
+
+    // filter tạo ra một mảng mới để lưu giá trị lại khi thực hiện các thao tác trong này
+    const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+    const filterFun = (word) => {
+        return word.length > 5
+    }
+    const result = words.filter(filterFun);
+
+    console.log(result);
 </script>
 
 <body>
